@@ -1,0 +1,54 @@
+<!--pages/medicine_xiangxi/medicine_xiangxi.wxml-->
+
+<view class='all_contect'>
+
+  <view class='medicine_top'>{{medicine_data[0].product_name}}药品使用说明书</view>
+
+  <view class='top_neirong_css'>
+    <image src='/images/icon_image/blue.jpg'></image>
+    <text>产品名称</text>
+  </view>
+  <view class='neirong_right'>{{medicine_data[0].product_name}}</view>
+
+  <view class='top_neirong_css'>
+    <image src='/images/icon_image/blue.jpg'></image>
+    <text>英文名称</text>
+  </view>
+  <view class='neirong_right'>{{medicine_data[0].english_name}}</view>
+
+  <view class='top_neirong_css'>
+    <image src='/images/icon_image/blue.jpg'></image>
+    <text>产品分类</text>
+  </view>
+  <view class='neirong_right'>{{medicine_data[0].use_classification}}</view>
+
+    <view class='top_neirong_css'>
+    <image src='/images/icon_image/blue.jpg'></image>
+    <text>主要成份</text>
+  </view>
+  <view class='neirong_right'>{{medicine_data[0].main_ingredient}}</view>
+
+    <view class='top_neirong_css'>
+    <image src='/images/icon_image/blue.jpg'></image>
+    <text>用　　途</text>
+  </view>
+  <view class='neirong_right'>{{medicine_data[0].drug_use}}</view>
+
+  <view class='top_neirong_css'>
+    <image src='/images/icon_image/blue.jpg'></image>
+    <text>用法用量</text>
+  </view>
+  <view class='neirong_right'>{{medicine_data[0].dosage}}</view>
+
+  <view class='top_neirong_css'>
+    <image src='/images/icon_image/blue.jpg'></image>
+    <text>产品说明</text>
+  </view>
+  <view class='neirong_right'>{{medicine_data[0].product_manual}}</view>
+
+  <view class="round-click" bindtap='go_medicine_evaluate'>
+   <view class='click_text_css'>药品评价</view>
+  </view>
+
+
+</view>

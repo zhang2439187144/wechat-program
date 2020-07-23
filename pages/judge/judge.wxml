@@ -1,0 +1,142 @@
+<view class='main' style='background=rgb(242,242,242);'>
+
+  <!-- <image src="{{img}}" class='img'></image> -->
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view>
+      <view class="inputtext">请选择您的病症</view>
+      <!-- <view class="left" animation="{{ani}}"> -->
+      <!-- <view class='float-tips'>本小程序可诊断的六种疾病：糖尿病、高血压、胃炎、心律失常、哮喘、慢性阻塞性肺病</view>
+        <image src='/icon/tips.png' class='left-image' bindtap='start'></image>
+      </view> -->
+      <view class='desease_tips'>常见病症选择:</view>
+
+      <scroll-view style="width: 94%;margin-left:3%;" scroll-y scroll-x="true" scroll-into-view="{{toView}}" scroll-with-animation="true" id='here'>
+        <!-- tab -->
+        <view class="tab">
+          <view class="tab-nav" style='font-size:35rpx'>
+            <view wx:for="{{tabnav.tabitem}}" wx:key="{{tabnav.tabitem.id}}" bindtap="setTab" data-tabindex="{{index}}" style="width:23%;text-align:center;height:80rpx;">{{item.text}}
+            </view>
+            <view>
+              <view class="tab-line" style="width:{{100/tabnav.tabnum}}%;transform:translateX({{100*showtab}}%);"></view>
+            </view>
+          </view>
+          <view>
+            <swiper class="swiper" current="{{showtab}}" duration="200" bindchange="swiperChange" style='height:{{swiper_height}}'>
+              <swiper-item>
+                <view class='detail-cont' id='page0'>
+                  <view class='label'>
+                    <checkbox-group bindchange="checkboxChange_0">
+                      <label wx:for="{{hot}}" class='checkbox'>
+                        <checkbox class="checkbox-cart" value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+                      </label>
+                    </checkbox-group>
+                  </view>
+                </view>
+              </swiper-item>
+
+              <swiper-item>
+                <view class='detail-cont' id='page1'>
+                  <view class='label'>
+                    <checkbox-group bindchange="checkboxChange_1">
+                      <label wx:for="{{head}}" class='checkbox'>
+                        <checkbox class="checkbox-cart" value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+                      </label>
+                    </checkbox-group>
+                  </view>
+                </view>
+              </swiper-item>
+
+              <swiper-item>
+                <view class='detail-cont' id='page2'>
+                  <view class='label'>
+                    <checkbox-group bindchange="checkboxChange_2">
+                      <label wx:for="{{neck}}" class='checkbox'>
+                        <checkbox class="checkbox-cart" value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+                      </label>
+                    </checkbox-group>
+                  </view>
+                </view>
+              </swiper-item>
+
+              <swiper-item>
+                <view class='detail-cont' id='page3'>
+                  <view class='label'>
+                    <checkbox-group bindchange="checkboxChange_3">
+                      <label wx:for="{{shoulder}}" class='checkbox'>
+                        <checkbox class="checkbox-cart" value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+                      </label>
+                    </checkbox-group>
+                  </view>
+                </view>
+              </swiper-item>
+
+              <swiper-item>
+                <view class='detail-cont' id='page4'>
+                  <view class='label'>
+                    <checkbox-group bindchange="checkboxChange_4">
+                      <label wx:for="{{chest}}" class='checkbox'>
+                        <checkbox class="checkbox-cart" value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+                      </label>
+                    </checkbox-group>
+                  </view>
+                </view>
+              </swiper-item>
+
+              <swiper-item>
+                <view class='detail-cont' id='page5'>
+                  <view class='label'>
+                    <checkbox-group bindchange="checkboxChange_5">
+                      <label wx:for="{{abdomen}}" class='checkbox'>
+                        <checkbox class="checkbox-cart" value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+                      </label>
+                    </checkbox-group>
+                  </view>
+                </view>
+              </swiper-item>
+
+              <swiper-item>
+                <view class='detail-cont' id='page6'>
+                  <view class='label'>
+                    <checkbox-group bindchange="checkboxChange_6">
+                      <label wx:for="{{hip}}" class='checkbox'>
+                        <checkbox class="checkbox-cart" value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+                      </label>
+                    </checkbox-group>
+                  </view>
+                </view>
+              </swiper-item>
+
+              <swiper-item>
+                <view class='detail-cont' id='page7'>
+                  <view class='label'>
+                    <checkbox-group bindchange="checkboxChange_7">
+                      <label wx:for="{{hipss}}" class='checkbox'>
+                        <checkbox class="checkbox-cart" value="{{item.value}}" checked="{{item.checked}}" />{{item.value}}
+                      </label>
+                    </checkbox-group>
+                  </view>
+                </view>
+              </swiper-item>
+
+            </swiper>
+          </view>
+
+        </view>
+
+      </scroll-view>
+
+
+
+
+      <view class='desease_tips'>病症补充:</view>
+      <textarea name="content" rows="5" cols="30" placeholder='可拓展标签内容 例：胃痛 >> 我持续性胃绞痛已三天。' placeholder-class="place-holder" value='{{cont}}' class='input'>
+      </textarea>
+    </view>
+
+    <view class="butt">
+      <button class="butto" formType="submit" hover-class='hoverclass'>提交诊断</button>
+    </view>
+  </form>
+  <view class='tips'>*请尽可能详细的描述您的病情，本程序仅提供正式确诊前的初步自我诊断，请勿迷信本小程序的结果。</view>
+
+</view>

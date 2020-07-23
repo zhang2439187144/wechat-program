@@ -1,0 +1,33 @@
+@import 'weui/weui.wxss';
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.wxParse-img {
+  display: block !important;
+}
+.space {
+  height:20rpx;
+  background-color: #F2f2f2;
+}
+
+
+.null_boxes{
+  padding-top: 300rpx;
+  text-align: center;
+  
+}
+
+.null_boxes image{
+  height: 227rpx;
+  width: 289rpx;
+}
+page{
+  background-color:#F0FFF0;
+  height:100%;
+  }

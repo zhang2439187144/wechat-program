@@ -1,0 +1,195 @@
+<view>
+  <image src="http://121.36.104.137/get_illness/image/logo.png" class='img'></image>
+  <view class='h1'>智能疾病初步预诊</view>
+  <view class='h2'>可能患有的疾病</view>
+  <view wx:if="{{healthy==0}}">
+    <canvas canvas-id="pieCanvas" class="canvas"></canvas>
+    <view style='margin-left:5%;color:#333333;'>{{desease_kind}}相关</view>
+    <scroll-view style="width: 94%;margin-left:3%;" scroll-y scroll-into-view="{{toView}}" scroll-with-animation="true" id='here'>
+      <!-- tab -->
+      <view class="tab">
+        <view class="tab-nav" style='font-size:35rpx'>
+          <view wx:for="{{tabnav.tabitem}}" wx:key="{{tabnav.tabitem.id}}" bindtap="setTab" data-tabindex="{{index}}" style="width:23%;text-align:center;height: 80rpx;">{{item.text}}
+          </view>
+          <view>
+            <view class="tab-line" style="width:{{90/tabnav.tabnum}}%;transform:translateX({{100*showtab}}%);"></view>
+          </view>
+        </view>
+        <view>
+          <swiper class="swiper" current="{{showtab}}" duration="200" bindchange="swiperChange" style='height:{{swiper_height}}'>
+            <swiper-item>
+              <view class='detail-cont' id='page0' wx:if="{{state==0}}">
+                <image src='/icon/loading.gif' style='width:220rpx;height:166rpx;margin-left:35%;'></image>
+              </view>
+              <view class='detail-cont' id='page0' wx:if="{{state==1}}">
+                <view class='items1'>
+                  <view class='desease-title'>科室：</view>
+                  <view class='keshi'>{{desease_data[0].desease_gaiyao_keshi}}</view>
+                </view>
+                <view class='items'>
+                  <view class='desease-title'>病因：</view>
+                  <view class="{{isFolded1?'contentt':'content-temp'}}">
+                    <text>{{desease_data[0].desease_gaiyao_bingyin}}</text>
+                  </view>
+                  <view bindtap="change1" class="state">{{isFolded1?'展开﹀':'收起︿'}}</view>
+                </view>
+                <view class='items'>
+                  <view class='desease-title'>预防：</view>
+                  <view class="{{isFolded2?'contentt':'content-temp'}}">
+                    <text>{{desease_data[0].desease_gaiyao_yufang}}</text>
+                  </view>
+                  <view bindtap="change2" class="state">{{isFolded2?'展开﹀':'收起︿'}}</view>
+                </view>
+
+              </view>
+            </swiper-item>
+            <swiper-item>
+              <view class='detail-cont' id='page1' wx:if="{{state==0}}">
+                <image src='/icon/loading.gif' style='width:220rpx;height:166rpx;margin-left:35%;'></image>
+              </view>
+              <view class='detail-cont' id='page1' wx:if="{{state==1}}">
+                <view class='items'>
+                  <view class='desease-title'>症状表现：</view>
+                  <view class="content-temp">
+                    <text>{{desease_data[0].desease_zhenduan}}</text>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+            <swiper-item>
+              <view class='detail-cont' id='page2' wx:if="{{state==0}}">
+                <image src='/icon/loading.gif' style='width:220rpx;height:166rpx;margin-left:35%;'></image>
+              </view>
+              <view class='detail-cont' id='page2' wx:if="{{state==1}}">
+                <view class='items'>
+                  <view class='desease-title'>常用药品：</view>
+                  <view class="content-temp">
+                    <text>{{desease_data[0].desease_zhiliao}}</text>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+            <swiper-item>
+              <view class='detail-cont' id='page3' wx:if="{{state==0}}">
+                <image src='/icon/loading.gif' style='width:220rpx;height:166rpx;margin-left:35%;'></image>
+              </view>
+              <view class='detail-cont' id='page3' wx:if="{{state==1}}">
+                <view class='items'>
+                  <view class='desease-title'>日常护理：</view>
+                  <view class="content-temp">
+                    <text>{{desease_data[0].desease_huli}}</text>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+          </swiper>
+        </view>
+
+      </view>
+
+    </scroll-view>
+
+  </view>
+  <view wx:elif="{{healthy==1}}">
+    <view class='health'>通过您的输入，本小程序诊断出您没有患本小程序可诊断的六种疾病，对结果不满意请重新提交尽可能详细的病症描述，或根据下面信息进行进一步自诊。</view>
+    <view class="butt">
+      <button class="butto" bindtap='rejudge' hover-class='hoverclass'>重新诊断</button>
+      <button class="butto" bindtap='returnindex' hover-class='hoverclass'>返回主页</button>
+    </view>
+
+    <view style='margin-left:5%;'>自诊方法</view>
+    
+    <scroll-view style="width: 94%;margin-left:3%;" scroll-y scroll-into-view="{{toView}}" scroll-with-animation="true" id='here'>
+      <!-- tab -->
+      <view class="tab">
+        <view class="tab-nav" style='font-size:35rpx'>
+          <view wx:for="{{tabnav_2.tabitem}}" wx:key="{{tabnav_2.tabitem.id}}" bindtap="setTab" data-tabindex="{{index}}" style="width:23%;text-align:center;height: 80rpx;font-size:27rpx;">{{item.text}}
+          </view>
+          <view>
+            <view class="tab-line" style="width:{{100/tabnav_2.tabnum}}%;transform:translateX({{100*showtab}}%);"></view>
+          </view>
+        </view>
+        <view>
+          <swiper class="swiper" current="{{showtab}}" duration="200" bindchange="swiperChange" style='height:{{swiper_height}};'>
+           
+            <swiper-item>
+            <view class='detail-cont' id='page0' wx:if="{{state==0}}">
+                <image src='/icon/loading.gif' style='width:220rpx;height:166rpx;margin-left:35%;'></image>
+              </view>
+              <view class='detail-cont' id='page10' wx:else>
+                <view class='items'>
+                  <view class='desease-title'>症状表现：</view>
+                  <view class="content-temp">
+                    <text>{{desease_data[0].desease_zhenduan}}</text>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+
+            <swiper-item>
+              <view class='detail-cont' id='page11'>
+                <view class='items'>
+                  <view class='desease-title'>症状表现：</view>
+                  <view class="content-temp">
+                    <text>{{desease_data[1].desease_zhenduan}}</text>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+
+            <swiper-item>
+              <view class='detail-cont' id='page12'>
+                <view class='items'>
+                  <view class='desease-title'>症状表现：</view>
+                  <view class="content-temp">
+                    <text>{{desease_data[2].desease_zhenduan}}</text>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+
+            <swiper-item>
+              <view class='detail-cont' id='page13'>
+                <view class='items'>
+                  <view class='desease-title'>症状表现：</view>
+                  <view class="content-temp">
+                    <text>{{desease_data[3].desease_zhenduan}}</text>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+
+            <swiper-item>
+              <view class='detail-cont' id='page14'>
+                <view class='items'>
+                  <view class='desease-title'>症状表现：</view>
+                  <view class="content-temp">
+                    <text>{{desease_data[4].desease_zhenduan}}</text>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+
+            <swiper-item>
+              <view class='detail-cont' id='page15'>
+                <view class='items'>
+                  <view class='desease-title'>症状表现：</view>
+                  <view class="content-temp">
+                    <text>{{desease_data[5].desease_zhenduan}}</text>
+                  </view>
+                </view>
+              </view>
+            </swiper-item>
+    
+          </swiper>
+        </view>
+      </view>
+
+    </scroll-view>
+
+
+  </view>
+  <view wx:else>
+    <view class='black'> </view>
+  </view>
+</view>

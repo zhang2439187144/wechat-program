@@ -1,0 +1,118 @@
+/* pages/userInfor/userInfor.wxss */
+
+page {
+  background-color: #F0FFF0;
+}
+
+.main {
+  margin-top: 0rpx;
+  background-color: #F0FFF0;
+}
+.head {
+  background: #e0e3da;
+  width: 90%;
+  height: 5rpx;
+  margin-left: 5%;
+}
+.submit {
+  width: 100%;
+  height: 120rpx;
+  background-color: #F0FFF0;
+  display: flex;
+  justify-content: space-between;
+}
+.tip {
+  width: 30%;
+  font-size: 35rpx;
+  line-height: 120rpx;
+  margin-left: 4%;
+  color: black;
+}
+button{
+  width: 130rpx;
+  background-color: #F0FFF0;
+}
+button::after {
+  border: none
+}
+.subImg {
+  width: 96rpx;
+  height: 80rpx;
+  margin-top: 10rpx;
+}
+
+.tips {
+  font-size: 35rpx;
+  line-height: 120rpx;
+  color: grey;
+  text-align: center;
+}
+
+.text {
+  width: 86%;
+  height: 220rpx;
+  font-size: 38rpx;
+  border: 2rpx solid #979393;
+  border-radius: 20rpx;
+  text-align: center;
+  margin-left: 7%;
+}
+
+.feedBackItems {
+  width: 86%;
+  margin-left: 7%;
+  margin-top: 30rpx;
+  height: 100rpx;
+  font-size: 38rpx;
+  border: 2rpx solid #979393;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.item1 {
+  font-size: 30rpx;
+  line-height: 100rpx;
+  margin-left: 8%;
+  color: grey;
+}
+
+.item2 {
+  font-size: 35rpx;
+  margin-top: 27rpx;
+}
+
+.divLine {
+  background: grey;
+  width: 100%;
+  height: 3rpx;
+}
+
+.allQues {
+  margin-top: 150rpx;
+  margin-left: 5%;
+  font-size: 40rpx;
+  font-weight: 800;
+  line-height: 80rpx;
+}
+
+.question {
+  width: 95%;
+  margin-top: 30rpx;
+  margin-left: 3%;
+  font-size: 30rpx;
+  font-weight: 800;
+  line-height: 60rpx;
+}
+
+.answer {
+  width: 95%;
+  margin-top: 20rpx;
+  margin-left: 3%;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+.foot {
+  height: 80rpx;
+}

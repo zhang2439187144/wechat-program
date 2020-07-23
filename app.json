@@ -1,0 +1,54 @@
+{
+  "pages": [
+
+   
+    "pages/index/index",
+    "pages/authorize/index",
+    "pages/notice/show",
+
+
+    "pages/medicine_first/medicine_first",
+    "pages/medicine_xiangxi/medicine_xiangxi",
+    "pages/medicine/medicine",
+    "pages/medicine_evaluate/medicine_evaluate",
+    "pages/my/my",
+
+    "pages/judge/judge",
+    "pages/judge_result/judge_result",
+    "pages/books/index",
+    "pages/article_1/index",
+    
+    "pages/userInfor/userInfor",
+    "pages/userCollection/userCollection",
+    "pages/userFeedback/userFeedback",
+    "pages/judgeHistory/judgeHistory"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#1296d2",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/nav/home-off.png",
+        "selectedIconPath": "images/nav/home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/nav/my-off.png",
+        "selectedIconPath": "images/nav/my-on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

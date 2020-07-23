@@ -1,0 +1,25 @@
+<view class='main'>
+  <view class='user-infor'>
+    <image src='{{img}}' class='user-infor-img'></image>
+    <view class='user-infor-name'>{{name}}</view>
+  </view>
+   <view class="divLine"></view>
+  <view class='items' bindtap='userInfor'>
+    <image src='/icon/setup.png' class='user-infor-itemimg'></image>
+    <view class='user-infor-itemtext'>个人设置</view>
+  </view>
+  <view class='items' bindtap='userCollection'>
+    <image src='/icon/collection.png' class='user-infor-itemimg'></image>
+    <view class='user-infor-itemtext'>我的收藏</view>
+  </view>
+  <view class='items' bindtap='judgeHistory'>
+    <image src='/icon/history.png' class='user-infor-itemimg'></image>
+    <view class='user-infor-itemtext'>诊断记录</view>
+  </view>
+    <view class='items' bindtap='userFeedback'>
+    <image src='/icon/feedback.png' class='user-infor-itemimg'></image>
+    <view class='user-infor-itemtext'>用户反馈</view>
+  </view>
+  <view class='tips'>*本程序旨在提供正式确诊前的初步自我诊断，请勿迷信本软件的结果，如果您的身体却有严重不适，需要获得疾病治疗方案指导，请前往正规医院就诊。</view>
+
+</view>

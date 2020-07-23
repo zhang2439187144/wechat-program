@@ -1,0 +1,18 @@
+/* pages/notice/show.wxss */
+.notice {
+  width: 90%;
+  margin-left: 3%;
+}
+.title {
+  font-size: 35rpx;
+  color:chocolate;
+  margin-bottom: 70rpx;
+  margin-top: 150rpx;
+  text-align: center;
+}
+.text {
+  font-size: 33rpx;
+  line-height: 50rpx;
+  width: 84%;
+  margin-left: 8%;
+}

@@ -1,0 +1,65 @@
+/* pages/doctor/doctor.wxss */
+
+.container {
+  min-height: 100%;
+  display: block;
+  background-color: #F0FFF0;
+}
+
+.neirong_top {
+  height: 80rpx;
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.2);
+  background-color: #FFFAFA;
+  /*border-radius: 20px 20px 20px 20px;*/
+}
+
+.neirong_top_left {
+  font-size: 40rpx;
+  color: rgba(0, 0, 0, 1);
+  position: center;
+}
+
+.change_page {
+  padding-top: 10rpx;
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 50rpx;
+}
+
+.daohang_boxes {
+  /* padding-top: 10rpx;
+  height: 170rpx;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(238, 238, 238); */
+  margin-bottom: 20rpx;
+  height: 170rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.daohang_css {
+  text-align: center;
+  font-size: 30rpx;
+  font-family: Georgia, serif;
+  font-weight:bold;
+  border:1px solid #778899;
+  background: #e7ffe7;
+  border-radius: 10px;
+  width: 90%;
+  height: 80px; 
+}
+
+.daohang_css image {
+  margin-top: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+}

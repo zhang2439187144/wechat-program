@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "疾病初步预诊",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

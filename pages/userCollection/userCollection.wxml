@@ -1,0 +1,35 @@
+<!--pages/userCollection/userCollection.wxml-->
+
+<view wx:if="{{no_Collection==0}}">
+
+  <view class="head"></view>
+  <view class="tips">
+    <view class="left" animation="{{ani}}">
+      <text class="left-text">长按删除单个收藏</text>
+      <image src='/icon/tips.png' class='left-image' bindtap='start'></image>
+    </view>
+    <view class='right' bindtap='delete_all_collection'>
+      <image src='/icon/del.png' class='right-image' ></image>
+      <text class="right-text">删除全部</text>
+    </view>
+  </view>
+
+  <navigator wx:for='{{collection_data}}' wx:key="key" url="/pages/article_1/index?id={{item.number}}" open-type="navigate">
+    <view class='doctor_boxes' bindlongpress='delete_collection' id='{{item.time}}'>
+      <view class='doctor_img_boxes'>
+        <image src='{{item.text_image_url}}'></image>
+      </view>
+      <view class='doctor_infor_boxes'>
+        <view class='doctor_name'>{{item.text_title}}</view>
+        <view class='doctor_job'>收藏时间{{item.time}}</view>
+      </view>
+    </view>
+  </navigator>
+</view>
+
+<view wx:elif="{{no_Collection==-999}}"></view>
+
+<view class='null_boxes' wx:else>
+  <image src='/images/null_neirong.png'></image>
+  <view class=''>暂无收藏纪录</view>
+</view>

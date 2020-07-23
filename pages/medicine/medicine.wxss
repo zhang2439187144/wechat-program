@@ -1,0 +1,46 @@
+/* pages/doctor/doctor.wxss */
+
+.container {
+  background-color: #F0FFF0;
+  min-height: 100%;
+  display: block;
+}
+
+.choose_boxes {
+  padding-top: 10rpx;
+  font-size: 40rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.choose_demo {
+  text-align: center;
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgb(238, 238, 238);
+  border-radius: 20px;
+}
+
+.choose_demo image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.pingjia_top {
+  padding-left: 50rpx;
+  padding-top: 20rpx;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.2);
+}
+
+.pingjia_left {
+  font-size: 40rpx;
+  color: rgba(0, 0, 0, 1);
+}
+
+.pingjia_right {
+  padding-top: 10rpx;
+  font-size: 25rpx;
+  color: rgba(0, 0, 0, 0.5);
+}

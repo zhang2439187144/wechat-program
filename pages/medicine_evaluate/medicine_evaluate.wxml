@@ -1,0 +1,41 @@
+<!--pages/medicine_evaluate/medicine_evaluate.wxml-->
+
+<text class='medicine_top'>{{check_name}}-评价</text>
+
+<view  wx:if="{{no_Collection==0}}">
+  <view class='eval_boxes' wx:for='{{evaluate_data}}' wx:key="key">
+    <view class='eval_img_boxes'>
+      <image src='{{item.user_image}}'></image>
+    </view>
+    <view class='others_css'>
+      <view class='eval_name_css'>{{item.user_name}}</view>
+      <view class='eval_time_css'>{{item.evaluation_time}}</view>
+      <view class='eval_test_css'>{{item.evaluation_str}}</view>
+    </view>
+  </view>
+  
+  <view style='padding-top:100rpx;'></view>
+
+</view>
+
+<view class='null_boxes' wx:else>
+  <image src='/images/null_neirong.png'></image>
+  <view class=''>暂无评论内容</view>
+</view>
+
+
+
+
+<!-- 聊天输入 -->
+
+<view class="message">
+
+  <form bindreset="cleanInput" class="sendMessage">
+
+    <input type="text" placeholder="请输入评价内容.." value="{{massage}}" bindinput='bindChange'></input>
+
+    <button type="primary" bindtap='send' formType="reset" size="small" button-hover="blue">发送</button>
+
+  </form>
+
+</view>

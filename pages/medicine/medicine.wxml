@@ -1,0 +1,49 @@
+<view class='container'>
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+
+        <input wx:if="{{inputVal == '搜索'}}" type="text " class="weui-search-bar__input" placeholder="搜索" value="" focus="{{inputShowed}}" bindinput="inputTyping" confirm-type="search" bindconfirm='toSearch' />
+
+        <input wx:else type="text " class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" confirm-type="search" bindconfirm='toSearch' />
+
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text" wx:if="{{inputVal == '搜索'}}">搜索</view>
+        <view class="weui-search-bar__text" wx:else>{{inputVal}}</view>
+      </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{inputShowed}}" bindtap="hideInput">取消</view>
+  </view>
+
+  <!-- //选择地区和科室的选择框 -->
+  <view class='choose_boxes'>
+    <view class='choose_demo'>
+      <picker mode='selector' range='{{neirong_list}}' bindchange='change_neirong'>
+        <view>{{find_neirong}}
+          <image src='/images/icon_image/down_three.png'></image>
+        </view>
+      </picker>
+
+    </view>
+  </view>
+
+  <view class='doctor_boxes' wx:for='{{doctor_data}}' wx:key="key">
+
+    <view class='pingjia_top' bindtap='go_medine_xiangxi' id='{{item.product_name}}'>
+      <view class='pingjia_left'>{{item.product_name}}</view>
+      <view class='pingjia_right'>{{item.use_classification}}</view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{now_number==total_number}}">
+    <include src='/pages/common/bottom/bottom.wxml' />
+  </view>
+  
+</view>

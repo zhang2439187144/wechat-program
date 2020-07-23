@@ -1,0 +1,37 @@
+<view class="appointment">
+	<view class="app-moduler">
+		<view class="mod-item">
+			<view class='doctor_boxes'>
+				<view class="mod-title"> {{article_data[0].title}}</view>
+			</view>
+			<view class='author'>{{article_data[0].author}}</view>
+		</view>
+
+		<view class='detail'>{{article_data[0].time}}</view>
+		<form bindsubmit='shoucang'>
+			<view class='submit'>
+				<button form-type='submit'>
+					<text>收藏此文章</text>
+				</button>
+			</view>
+		</form>
+
+<form bindsubmit='ydyw'>
+			<view class='submit'>
+				<button form-type='submit'>
+					<text>阅读原文</text>
+				</button>
+			</view>
+		</form>
+
+    
+		<view class="mod-imagesize">
+			<image src='{{article_data[0].imagepath}}'></image>
+		</view>
+		<view class="moinfont">
+			<text>{{article_data[0].article}}</text>
+			<view class='author'>{{article_data[0].hint}}</view>
+
+		</view>
+	</view>
+</view>

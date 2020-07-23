@@ -1,0 +1,35 @@
+<!--pages/judgeHistory/judgeHistory.wxml-->
+<view class='judge-history'>
+
+
+  <view class="head"></view>
+  
+  <view wx:if="{{no_history==0}}">
+
+  <view class="tips">
+    <view class="left" animation="{{ani}}">
+      <text class="left-text">长按删除单个历史记录</text>
+      <image src='/icon/tips.png' class='left-image' bindtap='start'></image>
+    </view>
+    <view class='right' bindtap='delete_all_history'>
+      <image src='/icon/del.png' class='right-image'></image>
+      <text class="right-text">删除全部</text>  
+    </view>
+  </view>
+
+    <view class='history' wx:for='{{history_data}}' wx:key="key" bindlongpress='delete_history' id='{{item.judge_time}}'>
+      <view class='history-content'>病症：</view>
+      <view class='history-content'>{{item.judge_content}}</view>
+      <view class='history-content'>可能患有的疾病类型：</view>
+      <view class='history-content'>{{item.judge_result}}</view>
+      <view class='history-time'>查询时间：{{item.judge_time}}</view>
+    </view>
+  </view>
+
+  <view wx:elif="{{no_history==-999}}"></view>
+
+  <view class='null_boxes' wx:else>
+    <image src='/images/null_neirong.png'></image>
+    <view class=''>暂无诊断记录</view>
+  </view>
+</view>

@@ -1,0 +1,90 @@
+/* pages/userInfor/userInfor.wxss */
+
+page {
+  background-color: #F0FFF0;
+}
+
+.main {
+  margin-top: 0rpx;
+}
+
+.head {
+  background: #e0e3da;
+  width: 90%;
+  height: 5rpx;
+  margin-left: 5%;
+}
+
+.submit {
+  width: 100%;
+  height: 120rpx;
+  background-color: #F0FFF0;
+  display: flex;
+  justify-content: space-between;
+  border: 1rpx solid #e2e2e2;
+}
+.tip {
+  width: 30%;
+  font-size: 35rpx;
+  line-height: 120rpx;
+  margin-left: 4%;
+  color: black;
+}
+button{
+  width: 130rpx;
+  background-color:#F0FFF0;
+}
+button::after {
+  border: none
+}
+.subImg {
+  width: 96rpx;
+  height: 80rpx;
+  margin-top: 10rpx;
+}
+.userItems {
+  width: 90%;
+  height: 100rpx;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #F0FFF0;
+  display: flex; /*////////////////*//* justify-content: space-between; */
+  border-radius: 10px;
+  border:1px solid #000;
+}
+
+.item1 {
+  width: 30%;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  margin-left: 8%;
+  color: grey;
+}
+
+.more {
+  display: flex;
+  flex-direction: row;
+}
+
+.item2 {
+  font-size: 40rpx;
+  margin-top: 27rpx;
+}
+
+.divLine {
+  background: lightgrey;
+  width: 100%;
+  height: 3rpx;
+}
+
+.return {
+  margin-top: 100rpx;
+  margin-left: 5%;
+  width: 90%;
+  height: 100rpx;
+  background-color: white;
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  color: red;
+}

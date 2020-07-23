@@ -1,0 +1,40 @@
+<!--pages/userInfor/userInfor.wxml-->
+<view class="head"></view>
+<view class='main'>
+  <form bindsubmit="formSubmit">
+    <view class="submit">
+      <view class='tip'>编辑个人信息</view>
+      <view class='more'>
+        <button form-type='submit'>
+          <image src='/icon/dui.png' class='subImg'></image>
+        </button>
+      </view>
+    </view>
+
+    <view class='userItems'>
+      <view class='item1'>昵称</view>
+      <view class='more'>
+        <view class='item2'>
+          <input type='text' name="userName" maxlength='10'  placeholder="请输入您的新昵称" value='{{name}}' placeholder-style='color:glay;' />
+        </view>
+      </view>
+    </view>
+    <view class='userItems'>
+      <view class='item1'>性别</view>
+      <view class='more'>
+        <picker mode='selector' name="userSex" range='{{selectorItems}}' placeholder-style='color:glay;'  bindchange='selectorChange'>
+          <view class='item2'>{{selector}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class='userItems'>
+      <view class='item1'>手机号</view>
+      <view class='more'>
+        <view class='item2'>
+        <!-- <input type='text'  maxlength='11' />-->
+          <input type="number" name="userNumber"  placeholder-style='color:glay;' value='{{number}}' placeholder="请输入您的手机号" oninput="value=value.replace(/[^\d]/g,'')" maxlength="11"/>
+        </view>
+      </view>
+    </view>
+  </form>
+</view>

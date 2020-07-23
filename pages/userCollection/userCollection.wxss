@@ -1,0 +1,107 @@
+/* pages/userCollection/userCollection.wxss */
+page
+{
+  background-color:#F0FFF0 ;
+}
+
+.head {
+  background: #e0e3da;
+  width: 90%;
+  height: 5rpx;
+  margin-left: 5%;
+}
+
+.tips{
+  height: 55rpx;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  height: 55rpx;
+  display: flex;
+  flex-direction: row;
+}
+.left-image{
+  height: 55rpx;
+  width: 55rpx;
+  margin-left: 15rpx;
+}
+
+.left-text{
+  font-size: 35rpx;
+  line-height: 55rpx;
+  color: grey;
+  background-color: rgba(82, 53, 52, 0.075);
+}
+
+.right{
+  height: 50rpx;
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  border: 2rpx #979393;
+}
+.right-image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 5rpx;
+  margin-top: 5rpx;
+}
+
+.right-text{
+  font-size: 35rpx;
+  line-height: 50rpx;
+  color: red;
+}
+
+.doctor_boxes {
+  padding-bottom: 15rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.doctor_img_boxes {
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  height: 100%;
+}
+
+.doctor_img_boxes image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.doctor_infor_boxes {
+  padding-top: 30rpx;
+  padding-left: 40rpx;
+}
+
+.doctor_infor_one {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.doctor_name {
+  font-size: 40rpx;
+  padding-right: 30rpx;
+}
+
+.doctor_job {
+  font-size: 25rpx;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 20rpx;
+}
+
+.doctor_infor_two {
+  font-size: 25rpx;
+  padding-top: 10rpx;
+}
+
+.doctor_infor_three {
+  font-size: 25rpx;
+  padding-top: 10rpx;
+}

@@ -1,0 +1,190 @@
+/**index.wxss**/
+
+.main {
+  font-family: "楷体";
+}
+
+.img {
+  width: 56%;
+  height: 200rpx;
+  margin-top: 50rpx;
+  margin-left: 25%;
+  margin-bottom: 5rpx;
+}
+
+.float-tips {
+  font-size: 45rpx;
+  line-height: 55rpx;
+  width: 500rpx;
+  height: 250rpx;
+  color: rgb(255, 255, 255);
+  background: grey;
+  background-color: grey;
+  border-radius: 30rpx;
+  margin-top: 60rpx;
+}
+
+.left {
+  height: 55rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-image {
+  height: 55rpx;
+  width: 55rpx;
+  margin-left: 50rpx;
+}
+
+.desease_tips {
+  width: 86%;
+  margin-left: 7%;
+}
+
+.inputtext {
+  font-size: 60rpx;
+  text-align: center;
+  margin: 20rpx 0;
+}
+
+.input {
+  width: 86%;
+  height: 150rpx;
+  font-size: 38rpx;
+  border: 2rpx solid #979393;
+  border-radius: 30rpx;
+  text-align: center;
+  margin-left: 7%;
+  margin-bottom: 30rpx;
+  box-shadow: 0rpx 0rpx 16rpx 16rpx rgba(50, 53, 53, 0.116);
+  padding: 10rpx;
+}
+
+.place-holder {
+  color: rgb(148, 148, 148);
+  font-size: 30rpx;
+}
+
+
+.butt {
+  width: 86%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 7%;
+}
+
+.butto {
+  width: 60%;
+  height: 85rpx;
+  border-radius: 30px;
+  background: #673bb7;
+  color: white;
+  margin-left: 20%;
+  line-height: 85rpx;
+  font-size: 40rpx;
+  font-family: '黑体';
+}
+
+.butto::after {
+  border: none;
+}
+
+.hoverclass {
+  background-color: #663bb757;
+}
+
+.tips {
+  width: 80%;
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+  margin-left: 10%;
+  font-size: 35rpx;
+  color: rgba(131, 44, 44, 0.884);
+  line-height: 40rpx;
+}
+
+
+.label{
+  width: 92%;
+  margin-left: 4%;
+}
+.checkbox{
+  border: 1rpx #2c2d2a solid;
+  margin: 0 10rpx;
+  padding: 10rpx;
+  line-height: 80rpx;
+  border-radius: 10px;
+}
+.checkbox-cart .wx-checkbox-input{
+    width:35rpx;
+    height:35rpx;
+    border-radius: 50%!important;
+  }
+  .checkbox-cart .wx-checkbox-input.wx-checkbox-input-checked{
+    background: #1296d2;
+    border-radius: 50%!important;
+    border:0!important;
+    width:45rpx;
+    height:45rpx;
+  }
+  .checkbox-cart .wx-checkbox-input.wx-checkbox-input-checked::before{
+    width:45rpx;
+    height:45rpx;
+    border-radius: 50%!important;
+    line-height: 45rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #ffffff;
+    background: transparent;
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+  }
+  
+.tab {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.tab-nav {
+  height: 80rpx;
+  background: #fff;
+  border-bottom: 0.5rpx dotted #ddd;
+  display: flex;
+  line-height: 79rpx;
+  position: relative;
+  margin-bottom: 0rpx;
+  text-align: center;
+}
+
+.tab-line {
+  position: absolute;
+  left: 0;
+  bottom: -1rpx;
+  height: 6rpx;
+  background: #1296d2;
+  transition: all 0.3s;
+}
+
+.tab-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.detail-cont {
+  width: 100%;
+  
+}
+
+.state {
+  font-size: 33rpx;
+  text-align: right;
+}
+
+.swiper {
+  width: 100%;
+  margin-bottom: 20rpx;
+  padding: 20rpx 0 0 0;
+}
+

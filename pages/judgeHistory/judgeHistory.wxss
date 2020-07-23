@@ -1,0 +1,105 @@
+/* pages/judgeHistory/judgeHistory.wxss */
+page
+{
+  background-color: #F0FFF0;
+}
+
+.head {
+  background: #e7ffe7;
+  width: 100%;
+  height: 5rpx;
+}
+
+.tips{
+  height: 55rpx;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  height: 55rpx;
+  display: flex;
+  flex-direction: row;
+}
+.left-image{
+  height: 55rpx;
+  width: 55rpx;
+  margin-left: 15rpx;
+}
+
+.left-text{
+  font-size: 35rpx;
+  line-height: 55rpx;
+  color: grey;
+  background-color: rgba(82, 53, 52, 0.075);
+}
+
+.right{
+  height: 50rpx;
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  border: 2rpx #979393;
+
+}
+.right-image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 5rpx;
+  margin-top: 5rpx;
+}
+
+.right-text{
+  font-size: 35rpx;
+  line-height: 50rpx;
+  color: red;
+}
+
+.judge-history {
+  width: 95%;
+  margin-left: 2%;
+  margin-top: 20rpx;
+}
+
+.divLine {
+  background: #e0e3da;
+  width: 100%;
+  height: 5rpx;
+}
+
+.history-text {
+  text-align: center;
+  font-size: 50rpx;
+  color: rgb(57, 82, 102);
+  margin-bottom: 15rpx;
+}
+
+.history {
+  width: 100%;
+  background-color: #e7ffe7;
+  border: 1rpx solid #979393;
+  text-align: center;
+  margin-top: 20rpx;
+  border-radius: 10px;
+}
+
+.history-time {
+  font-size: 25rpx;
+  color: grey;
+  text-align: left;
+}
+
+.history-content {
+  width: 98%;
+  margin-left: 1%;
+  font-size: 30rpx;
+  color: rgb(22, 20, 20);
+  text-align: left;
+}
+
+.noHistory {
+  font-size: 50rpx;
+  color: grey;
+  text-align: center;
+  margin-top: 50rpx;
+}

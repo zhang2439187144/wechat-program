@@ -1,0 +1,83 @@
+<view class='container'>
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text " class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" confirm-type="search" bindconfirm='toSearch' />
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索</view>
+      </label>
+
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+  </view>
+
+
+  <view class='neirong_top'>
+    <view class='neirong_top_left'>常见分类</view>
+
+  </view>
+
+  <view style='padding-top:30rpx;'></view>
+
+  <view class="all_box">
+    <view class='daohang_boxes'>
+      <view class='daohang_css'>
+        <image src='/images/main_page/51.png' bindtap='toMedicine' id='12'></image>
+        <view>清热解毒</view>
+      </view>
+      </view>
+
+       <view class='daohang_boxes'>
+      <view class='daohang_css'>
+        <image src='/images/main_page/41.png' bindtap='toMedicine' id='0'></image>
+        <view>抗菌消炎</view>
+      </view>
+    </view>
+
+
+    <view class='daohang_boxes'>
+      <view class='daohang_css'>
+        <image src='/images/main_page/52.png' bindtap='toMedicine' id='2'></image>
+        <view>呼吸系统</view>
+      </view>
+      </view>
+        <view class='daohang_boxes'>
+      <view class='daohang_css'>
+        <image src='/images/main_page/81.png' bindtap='toMedicine' id='18'></image>
+        <view>眼科用药</view>
+      </view>
+    </view>
+
+    <view class='daohang_boxes'>
+      <view class='daohang_css'>
+        <image src='/images/main_page/62.png' bindtap='toMedicine' id='11'></image>
+        <view>皮肤用药</view>
+      </view>
+       </view>
+         <view class='daohang_boxes'>
+      <view class='daohang_css'>
+        <image src='/images/main_page/42.png' bindtap='toMedicine' id='5'></image>
+        <view>抗寄生虫</view>
+      </view>
+    </view>
+    <view class='daohang_boxes'>
+      <view class='daohang_css'>
+        <image src='/images/main_page/12.png' bindtap='toMedicine' id='9'></image>
+        <view>免疫调节</view>
+      </view>
+         </view>
+         <view class='daohang_boxes'>
+      <view class='daohang_css'>
+        <image src='/images/main_page/61.png' bindtap='toMedicine' id='4'></image>
+        <view>抗过敏药</view>
+      </view>
+    </view>
+  </view>
+
+</view>

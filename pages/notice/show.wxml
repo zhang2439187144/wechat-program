@@ -1,0 +1,6 @@
+<view class="notice">
+  <view class="title">使用本小程序须知</view>
+  <view class="text">
+  <text space="emsp">  *本程序旨在提供正式确诊前的初步自我诊断，请勿迷信本软件的结果，如果您的身体却有严重不适，需要获得疾病治疗方案指导，请前往正规医院就诊。</text>
+  </view>
+</view>

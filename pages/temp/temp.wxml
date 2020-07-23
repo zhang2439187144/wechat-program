@@ -1,0 +1,61 @@
+<view class='test'>123</view>
+<view style='height:{{swiper_height}};border: 1rpx red solid;'>hhh</view>
+
+<scroll-view scroll-x="true" style="width: 100%;">
+  <!-- tab -->
+  <view class="tab" wx:if="state=1">
+    <view class="tab-nav" style='font-size:35rpx'>
+      <view wx:for="{{tabnav.tabitem}}" wx:key="{{tabnav.tabitem.id}}" bindtap="setTab" data-tabindex="{{index}}" style="min-width:20%;max-width:20%;text-align:center;height: 80rpx;{{index>4?'border-bottom: 1rpx dotted #ddd;':''}}">{{item.text}}
+      </view>
+      <view>
+        <view class="tab-line" style="width:{{100/tabnav.tabnum}}%;transform:translateX({{100*showtab}}%);"></view>
+      </view>
+    </view>
+    <view wx:if="{{showtab==0}}" class='detail-cont'>
+      <view class='items1'>
+        <view class='desease-title'>科室：</view>
+        <view class='keshi'>{{desease_data[0].desease_gaiyao_keshi}}</view>
+      </view>
+      <view class='items'>
+        <view class='desease-title'>病因：</view>
+        <view class="{{isFolded1?'contentt':'content-temp'}}">
+          <text>{{desease_data[0].desease_gaiyao_bingyin}}</text>
+        </view>
+<view bindtap="change1" class="state">{{isFolded1?'展开﹀':'收起︿'}}</view> 
+      </view>
+      <view class='items'>
+        <view class='desease-title'>预防：</view>
+        <view class="{{isFolded2?'contentt':'content-temp'}}">
+          <text>{{desease_data[0].desease_gaiyao_yufang}}</text>
+        </view>
+        <view bindtap="change2" class="state">{{isFolded2?'展开﹀':'收起︿'}}</view> 
+      </view>
+    </view>
+    <view wx:elif="{{showtab==1}}" class='detail-cont'>
+
+      <view class='items'>
+        <view class='desease-title'>症状表现：</view>
+        <view class="content-temp">
+          <text>{{desease_data[0].desease_zhenduan}}</text>
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{showtab==2}}" class='detail-cont'>
+      <view class='items'>
+        <view class='desease-title'>常用药品：</view>
+        <view class="content-temp">
+          <text>{{desease_data[0].desease_zhiliao}}</text>
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{showtab==3}}" class='detail-cont'>
+      <view class='items'>
+        <view class='desease-title'>日常护理：</view>
+        <view class="content-temp">
+          <text>{{desease_data[0].desease_huli}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='footer'></view>
+  </view>
+</scroll-view>

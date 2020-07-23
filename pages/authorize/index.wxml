@@ -1,0 +1,10 @@
+<view class="container">
+  <form bindsubmit="bindSave">
+    <image class="logo" src="/images/wx.png" mode="widthFix" />
+    <view class="title">微信授权页面</view>
+    <view class="profile">授权并同意使用微信账号登录当前小程序</view>
+    <view class="profile1">注意：目前本小程序仅能进行6种疾病的初步预诊（糖尿病、高血压、胃炎、心律失常、哮喘、慢性阻塞性肺病）</view>
+    <button type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="weui-btn mini-btn">授权登录</button>
+
+  </form>
+</view>

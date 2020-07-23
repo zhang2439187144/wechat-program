@@ -1,0 +1,118 @@
+/* pages/medicine_xiangxi/medicine_xiangxi.wxss */
+
+.all_contect {
+  text-align: center;
+}
+
+.medicine_top {
+  font-size: 45rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: #d6ecf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.neirong_boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.neirong_left {
+  text-align: center;
+  left: 30rpx;
+}
+
+.table {
+  border: 1px solid #c0802d;
+  border-right: 0;
+  border-bottom: 0;
+  width: 98%;
+}
+
+.neirong_boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.neirong_left {
+  width: 300rpx;
+  background-color: #afa4a4;
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+}
+
+.pingjia_top {
+  height: 60rpx;
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.2);
+}
+
+.pingjia_left {
+  font-size: 30rpx;
+  color: #177cb0;
+  position: absolute;
+  left: 50rpx;
+}
+
+.pingjia_right {
+  padding-top: 10rpx;
+  font-size: 25rpx;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 50rpx;
+}
+
+
+.top_neirong_css {
+  text-align: left;
+}
+
+.top_neirong_css image{
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  width: 20rpx;
+  height: 50rpx;
+}
+
+.top_neirong_css text{
+  font-size: 40rpx;
+}
+
+
+.neirong_right {
+  padding-left: 5%;
+  font-size: 35rpx;
+  text-align: left;
+  width: 90%;
+  padding-bottom: 50rpx;
+  color : #80898d;
+}
+
+.round-click{
+    height: 120rpx;
+    width: 120rpx;
+    background-color: #b25d25;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 150rpx;
+    right: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.click_text_css{
+    font-size: 32rpx;
+    max-width: 80rpx;
+    color: #fff;
+    text-align: center;
+}

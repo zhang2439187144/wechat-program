@@ -1,0 +1,44 @@
+<!--pages/userFeedback/userFeedback.wxml-->
+<view class="head"></view>
+<view class='main'>
+  <form bindsubmit="formSubmit">
+    <view class="submit">
+      <view class='tip'>我要反馈</view>
+      <view class='more'>
+        <button form-type='submit'>
+          <image src='/icon/dui.png' class='subImg'></image>
+        </button>
+      </view>
+    </view>
+
+    <view class="tips">留下联系方式，将有机会获得精美礼品！</view>
+
+    <textarea name="content" rows="5" cols="30" placeholder='感谢您为我们提供宝贵意见！(必填)' class='text'></textarea>
+
+    <view class='feedBackItems'>
+      <view class='item1'>QQ：</view>
+      <view class='item2'>
+        <input type='text' name="userQQ" maxlength='11' />
+      </view>
+    </view>
+
+    <view class='feedBackItems'>
+      <view class='item1'>手机(必填)：</view>
+      <view class='item2'>
+        <input type='text' name="userNumber" maxlength='11' />
+      </view>
+    </view>
+  </form>
+
+  <view class='allQues'>常见问题</view>
+  <view class="divLine"></view>
+  <view class='question'>{{question1}}</view>
+  <view class='answer'>{{answer1}}</view>
+  <view class='question'>{{question2}}</view>
+  <view class='answer'>{{answer2}}</view>
+  <view class='question'>{{question3}}</view>
+  <view class='answer'>{{answer3}}</view>
+
+  <view class='foot'></view>
+
+</view>

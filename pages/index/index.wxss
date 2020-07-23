@@ -1,0 +1,434 @@
+.container {
+  background-color: #F0FFF0;
+  min-height: 100%;
+  display: block;
+}
+
+.swiper image {
+  width: 100%;
+  height: auto;
+}
+
+.category-box {
+  background-color: #fff;
+  clear: both;
+}
+
+.category-list {
+  width: 150rpx;
+  margin-top: 20rpx;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.category-column {
+  width: 100%;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.category-imgbox {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.category-title {
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.swiper-container {
+  width: 750rpx;
+  position: relative;
+}
+
+.swiper_box {
+  width: 750rpx;
+  height: 250rpx;
+}
+
+swiper-item image {
+  width: 750rpx;
+  height: 250rpx;
+}
+
+.swiper-container .dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-container .dots .dot {
+  margin: 0 8rpx;
+  width: 14rpx;
+  height: 14rpx;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.6s;
+  opacity: 0.5;
+}
+
+.swiper-container .dots .dot.active {
+  width: 14rpx;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.type-item-on {
+  color: #e64340;
+  border-bottom: 1rpx solid #e64340;
+}
+
+.weui-loadmore {
+  margin-bottom: 0px;
+}
+
+.goods-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+  background-color: #f2f2f2;
+}
+
+.goods-box {
+  width: 339rpx;
+  height: 472rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius: 5px;
+}
+
+.goods-box .img-box {
+  width: 339rpx;
+  height: 339rpx;
+  overflow: hidden;
+}
+
+.goods-box .img-box image {
+  width: 339rpx;
+  height: 339rpx;
+}
+
+.goods-box .goods-title {
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0 0rpx 0;
+  color: #000;
+  margin-left: 24rpx;
+}
+
+.goods-box .goods-price {
+  width: 280rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0;
+  color: #e64340;
+  margin-left: 24rpx;
+}
+
+.no-more-goods {
+  text-align: center;
+  font-size: 24rpx;
+  padding-bottom: 48rpx;
+  color: #999;
+}
+
+.notice {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 750rpx;
+  margin-top: 10rpx;
+  background-color: #FFFAFA;
+  border-bottom: 1rpx solid #efeff4;
+}
+
+.notice_icon {
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.notice_swiper {
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 680rpx;
+}
+
+.notice_itemr {
+  padding-left: 10rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  color: #e64340;
+  width: 680rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.pos-fiexd {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.coupons {
+  margin-top: 10rpx;
+  width: 100%;
+  height: 180rpx;
+  overflow: hidden;
+}
+
+.coupons-scroll {
+  white-space: nowrap;
+  height: 180rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.coupons-item {
+  width: 300rpx;
+  height: 180rpx;
+  margin: 10rpx;
+  padding-top: 20rpx;
+  padding-left: 15rpx;
+  background-color: #f1a83b;
+  box-sizing: content-box;
+  font-size: 20rpx;
+  line-height: 35rpx;
+  overflow: hidden;
+  color: #fff;
+  display: inline-block;
+}
+
+.tuan {
+  width: 750rpx;
+  background-color: #f2f2f2;
+  padding-top: 10rpx;
+}
+
+.tuan-item {
+  width: 720rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+}
+
+.tuan-goods-pic {
+  width: 100%;
+  height: 250rpx;
+  overflow: hidden;
+}
+
+.tuan-goods-pic image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.tuan-title {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+}
+
+.tuan-profile {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.tuan-price {
+  margin-left: 20rpx;
+}
+
+.tuan-price .now {
+  font-size: 36rpx;
+  color: #e64340;
+}
+
+.tuan-price .original {
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.tuan-btn {
+  position: absolute;
+  right: 30rpx;
+  bottom: 10rpx;
+}
+
+.daohang_boxes {
+  margin-bottom: 20rpx;
+  height: 250rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+#daohang_minibox{
+  margin-top: 10px;
+  width: 100px;
+  border-radius: 10px;
+  background: #e7ffe7;
+  /* color: white;
+  padding: 0rpx 100rpx; */
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  height: 100px; 
+  border:1px solid #778899;
+  float: right;
+}
+
+.daohang_css {
+  text-align: center;
+  font-size: 30rpx;
+  font-family: Georgia, serif;
+  font-weight:bold;
+
+}
+
+.daohang_css image {
+  margin-top: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+
+
+.Button_css::after {
+  border: none;
+}
+
+.Button_css {
+  width: 100px;
+  border-radius: 20px;
+  background: rgba(6, 139, 46, 0.5);
+  color: white;
+  /* padding: 0rpx 100rpx; */
+  box-shadow: 0 2px 25px rgba(207, 194, 7, 0.4);
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  height: 210px;
+  font-size: 26px;
+  border:1px solid #778899;
+  float: left;
+  margin-left: 10px;
+  line-height: 60px;
+  margin-top: 11px;
+  padding-top: 35px;
+}
+
+.mod-imagesize {
+  display: flex;
+  justify-content: center;
+}
+
+.mod-imagesize image {
+  width: 96%;
+  height: 350rpx;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.mod-title {
+  text-align: center;
+  font-size: 31rpx;
+  font-family: Georgia, serif;
+  font-weight:bold;
+  display: flex;
+  height: 45rpx;
+  margin-top: 15rpx;
+  flex-direction: column;
+  justify-content: center;
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.bubbly-button {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #006400;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: center;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  
+}
+
+
+
+
+
+
+
+.zan-dialog__mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0);
+  /* //设置阴影半透明背景如： */
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.zan-dialog__container {
+  position: fixed;
+  bottom: 420rpx;
+  width: 80%;
+  /* 弹窗布局宽 */
+  height: 350rpx;
+  /* //弹窗布局高，与下面弹出距离transform有关 */
+  margin-left: 10%;
+  background: #F0FFF0;
+  transform: translateY(300%);
+  /* //弹框弹出距离，与弹框布局高度有关，如300%表示弹起距离为3倍弹窗高度 */
+  transition: all 0.4s ease;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  /* //弹框的悬浮阴影效果，如不需要可注释该行 */
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  padding-top: -50px;
+}
+
+.zan-dialog--show .zan-dialog__container {
+  transform: translateY(0);
+}
+
+.zan-dialog--show .zan-dialog__mask {
+  display: block;
+}

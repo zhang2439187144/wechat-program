@@ -1,0 +1,5 @@
+.bottom_css{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2rpx;
+  text-align: center;
+}
